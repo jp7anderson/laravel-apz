@@ -14,7 +14,8 @@ class RecommendationRequest extends Request
     public function rules()
     {
         return [
-            'email' => 'required|email'
+            'email' => 'required|email',
+            'g-recaptcha-response' => 'required|recaptcha'
         ];
     }
 }
