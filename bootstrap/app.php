@@ -51,5 +51,8 @@ $app->singleton(
 | from the actual running of the application and sending responses.
 |
 */
+if (!empty($argv) && in_array('--env=testing', $argv)) {
+    $app->loadEnvironmentFrom('.env.testing');
+}
 
 return $app;
