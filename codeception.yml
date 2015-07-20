@@ -21,6 +21,6 @@ modules:
             dump: tests/_data/dump.sql
 coverage:
     enabled: true
-    remote: true
+    c3_url: 'http://localhost:8000'
     include:
         - app/*

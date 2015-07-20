@@ -15,10 +15,6 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/c3/{extra}', function () {
-    require base_path('c3.php');
-})->where('extra', '.*');
-
 Route::resource('articles', 'ArticlesController');
 Route::resource('authors', 'AuthorsController');
 Route::resource('articles.recommendations', 'RecommendationsController', ['only' => ['create', 'store']]);
