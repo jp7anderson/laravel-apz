@@ -9,4 +9,5 @@ Homestead.yaml
 /storage/*.sqlite
 .env.testing
 
-tests/_output/*
+tests/_output/*c3.php
+build
